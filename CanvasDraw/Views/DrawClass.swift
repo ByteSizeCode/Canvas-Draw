@@ -43,7 +43,6 @@ class DrawingView: UIView {
     }
     
     override func draw(_ rect: CGRect) {
-        
         //Retrieve current color
         let defaults = UserDefaults.standard
         let colorStr = UserDefaults.standard.string(forKey: "key") ?? ""
@@ -57,7 +56,7 @@ class DrawingView: UIView {
     }
     
     // Capture the pan events into a bezier path by connecting the points with lines
-    @objc func pan(panGestureRecognizer:UIPanGestureRecognizer)->Void {
+    @objc func pan(panGestureRecognizer:UIPanGestureRecognizer) -> Void {
         //Get currenty location of finger
         let currentPoint = panGestureRecognizer.location(in: self)
         //Get midpoint of last point and current point
@@ -77,7 +76,7 @@ class DrawingView: UIView {
     }
     
     //Get midpoint of any given set of points
-    func midPoint(p0:CGPoint, p1:CGPoint)->CGPoint {
+    func midPoint(p0:CGPoint, p1:CGPoint) -> CGPoint {
         let x = (p0.x + p1.x)/2
         let y = (p0.y + p1.y)/2
         return CGPoint(x: x, y: y)

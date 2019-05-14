@@ -83,7 +83,6 @@ class DrawingView: UIView {
     }
 }
 
-
 extension DrawingView {
     func convStrColorToUIColor(withStrColor strColor:String) -> UIColor {
         if(strColor == "red") {

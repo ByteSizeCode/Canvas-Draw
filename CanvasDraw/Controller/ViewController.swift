@@ -10,7 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
     
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -20,7 +20,7 @@ class ViewController: UIViewController {
         view.addSubview(drawing)
         
         //Add color picker
-        let colorFrame = CGRect(x: 0, y: 0, width: 500, height: 130)
+        let colorFrame = CGRect(x: UIScreen.main.bounds.size.width / UIScreen.main.bounds.size.height - 20, y: 0, width: UIScreen.main.bounds.size.width, height: 130)
         let colorPicker = ColorSelection(frame: colorFrame)
         colorPicker.backgroundColor = .gray
         view.addSubview(colorPicker)

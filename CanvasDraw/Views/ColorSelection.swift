@@ -13,11 +13,13 @@ class ColorSelection: UIView {
     override init(frame: CGRect) {
         super.init(frame: frame)
         
+        let center = UIScreen.main.bounds.size.width / (UIScreen.main.bounds.size.height / 2) + 180
+        
         //Create circles
-        createCircle(positionedAt: CGPoint(x: 100,y: 70), usingColor: UIColor.red, withName: "red")
-        createCircle(positionedAt: CGPoint(x: 160,y: 70), usingColor: UIColor.blue, withName: "blue")
-        createCircle(positionedAt: CGPoint(x: 220,y: 70), usingColor: UIColor.purple, withName: "purple")
-        createCircle(positionedAt: CGPoint(x: 280,y: 70), usingColor: UIColor.black, withName: "black")
+        createCircle(positionedAt: CGPoint(x: center + 100,y: 70), usingColor: UIColor.red, withName: "red")
+        createCircle(positionedAt: CGPoint(x: center + 160,y: 70), usingColor: UIColor.blue, withName: "blue")
+        createCircle(positionedAt: CGPoint(x: center + 220,y: 70), usingColor: UIColor.purple, withName: "purple")
+        createCircle(positionedAt: CGPoint(x: center + 280,y: 70), usingColor: UIColor.black, withName: "black")
     }
     
     required init?(coder aDecoder: NSCoder) {

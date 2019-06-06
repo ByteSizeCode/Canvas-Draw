@@ -17,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6A68C44622A8BB2500D28E40 /* CanvasDraw.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CanvasDraw.entitlements; sourceTree = "<group>"; };
 		6A9D45FE2289FEE1006A2A69 /* CanvasDraw.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CanvasDraw.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A9D46012289FEE1006A2A69 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6A9D46032289FEE1006A2A69 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -58,6 +59,7 @@
 		6A9D46002289FEE1006A2A69 /* CanvasDraw */ = {
 			isa = PBXGroup;
 			children = (
+				6A68C44622A8BB2500D28E40 /* CanvasDraw.entitlements */,
 				6A9D46012289FEE1006A2A69 /* AppDelegate.swift */,
 				6A9D4616228A01DA006A2A69 /* Controller */,
 				6A9D4615228A01D3006A2A69 /* Views */,
@@ -306,7 +308,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = CanvasDraw/CanvasDraw.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				DERIVE_UIKITFORMAC_PRODUCT_BUNDLE_IDENTIFIER = YES;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = CanvasDraw/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -315,6 +319,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.IsaacRaval.CanvasDraw;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_UIKITFORMAC = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -324,7 +329,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = CanvasDraw/CanvasDraw.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				DERIVE_UIKITFORMAC_PRODUCT_BUNDLE_IDENTIFIER = YES;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = CanvasDraw/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -333,6 +340,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.IsaacRaval.CanvasDraw;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_UIKITFORMAC = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
